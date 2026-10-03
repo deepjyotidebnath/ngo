@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NGO / Trust — Donate, Volunteer, Make an Impact</title>
+<meta name="description" content="Official website of our NGO: our mission, projects, events, donation details and volunteer registration.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top" id="logo"></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#stories">Stories</a><a href="#volunteer">Volunteer</a><a href="#contact">Contact</a>
+    <a class="btn small" href="#donate">Donate</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="hero-in">
+      <span class="eyebrow" id="regLine"></span>
+      <h1 id="hTitle"></h1>
+      <p id="hSub"></p>
+      <div class="cta">
+        <a class="btn" href="#donate">Donate now</a>
+        <a class="btn ghost light" href="#volunteer">Become a volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="counters" id="counters"></section>
+
+  <section id="about" class="wrap">
+    <h2>About us</h2>
+    <p class="sub" id="aboutTxt"></p>
+    <div class="tabs" id="mvTabs"></div>
+    <div class="mv" id="mvBox"></div>
+    <div class="values" id="values"></div>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2>Our projects</h2>
+    <p class="sub">Programs that create lasting change.</p>
+    <div class="cards" id="projList"></div>
+  </section>
+
+  <section id="donate" class="wrap">
+    <div class="donate">
+      <div>
+        <h2>Support our work</h2>
+        <p class="sub" id="donIntro"></p>
+        <div class="amts" id="amts"></div>
+        <label>Your name<input id="dName" placeholder="Optional"></label>
+        <div class="cta">
+          <a class="btn" id="upiBtn">Donate via UPI</a>
+          <a class="btn wa" id="dWa" target="_blank" rel="noopener">Tell us on WhatsApp</a>
+        </div>
+        <p class="note" id="taxNote"></p>
+      </div>
+      <div class="bank">
+        <h3>Bank transfer</h3>
+        <table id="bankTbl"></table>
+        <button class="btn ghost" id="copyUpi"></button>
+        <div class="usage" id="usage"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="wrap">
+    <h2>Upcoming events</h2>
+    <div class="events" id="evList"></div>
+  </section>
+
+  <section id="gallery" class="wrap">
+    <h2>Photo gallery</h2>
+    <div class="gal" id="gal"></div>
+  </section>
+
+  <section id="stories" class="wrap">
+    <h2>Success stories</h2>
+    <div class="cards" id="storyList"></div>
+  </section>
+
+  <section id="volunteer" class="wrap">
+    <h2>Volunteer registration</h2>
+    <p class="sub">Give your time, skills and energy. We'll contact you within a few days.</p>
+    <form id="vf" novalidate>
+      <div class="row">
+        <label>Full name<input name="name" required autocomplete="name"></label>
+        <label>Phone / WhatsApp<input name="phone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <div class="row">
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <label>City<input name="city" autocomplete="address-level2"></label>
+      </div>
+      <div class="row">
+        <label>Area of interest<select name="area" id="vArea"></select></label>
+        <label>Availability<select name="avail"><option>Weekends</option><option>Weekday evenings</option><option>Full-time for a period</option><option>Flexible</option></select></label>
+      </div>
+      <label>Why do you want to volunteer?<textarea name="why" rows="3"></textarea></label>
+      <div class="err" id="vErr" role="alert"></div>
+      <div class="cta">
+        <button class="btn wa" type="submit" value="wa">Register via WhatsApp</button>
+        <button class="btn ghost" type="submit" value="mail">Register via email</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>Get in touch</h2>
+    <div class="contact">
+      <div class="box"><h3>Office</h3><p id="addr"></p><p id="hours"></p>
+        <a class="btn ghost" id="mapBtn" target="_blank" rel="noopener">Open in Google Maps</a></div>
+      <div class="box"><h3>Reach us</h3>
+        <p><a class="btn wa" id="waBtn" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+        <p><a class="btn ghost" id="mailBtn"></a></p>
+        <p><a class="btn ghost" id="callBtn"></a></p>
+        <div class="socials" id="socials"></div></div>
+    </div>
+  </section>
+</main>
+
+<footer id="foot"></footer>
+<a class="fab" id="fab" target="_blank" rel="noopener">WhatsApp</a>
+<dialog id="lb"><img id="lbImg" alt=""><p id="lbCap"></p><button class="btn ghost" id="lbClose">Close</button></dialog>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
